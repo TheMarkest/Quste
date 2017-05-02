@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacground"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/alert_dark_frame"
+                android:text="ВЫ ОСТОРОЖНО ДЕРЖИТЕ ПРОБИРКУ С НЕИЗВЕСТНЫМИ ВЕЩЕСТВАМИ."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/Var1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="Read"
+                android:text="ВЗБОЛТАТЬ И ПЕРЕМЕШАТЬ"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/Var2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="Var2"
+                android:text="ПЕРЕМЕШАТЬ И ВЗБОЛТАТЬ"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/Var3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="Var3"
+                android:text="ПЕРЕМЕШАТЬ НО НЕ ВЗБАЛТЫВАТЬ"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/Var4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="Var4"
+                android:text="ВЗБОЛТАТЬ НО НЕ ПЕРЕМЕШИВАТЬ"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
